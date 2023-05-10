@@ -1,0 +1,290 @@
+/* This part is given for the Parallax effect */
+.parallax {
+    /* The image used */
+    background-image: url("/home/arbas19/Downloads/1234.jpeg");
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* This part is for the body of the website */
+body {
+    background-color: rgba(255, 255, 255, 0.911);
+    font-family: sans-serif;
+}
+
+/* aclass1 is used for giving css
+ to the whole navigation pannel part */
+.aclass1 {
+    background-color: rgb(46, 43, 43);
+    text-decoration: none;
+    height: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* it is used to give css to the elements in 
+the navigation pannel under the <li> tag */
+.aclass1 li {
+    list-style: none;
+    display : inline;
+    line-height: 35.50px;
+    border-right: 0.10px solid black;
+    float: left;
+}
+
+/* it is used to give css to the elements in 
+the navigation pannel inside the <li> tag under the <a> tag */
+.aclass1 li a{
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    display: block;
+    padding: 0 100.70px;
+    color: aliceblue;
+}
+
+/* it is used to change the background of the 
+elements in the nav pannel when we hover them */
+.aclass1 li a:hover{
+    background-color:#2f3b4b ;
+}
+
+
+
+/* this is used to give css to the elements listed in the drop down 
+menu that appears when we hovers the element 'Events' in the nav pannel */
+.listed_elements {
+  display: none;
+  position: absolute;
+  background-color: #747373;
+  padding: 5px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.listed:hover .listed_elements {                 
+  display: block;
+  width: 244.50px;
+}       
+.listed_elements li a {
+  color: rgb(80, 80, 80);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.listed_elements li a:hover {
+  background-color: #494747;
+  display: inline;
+}
+
+
+.aclass2 {
+    padding-left: 25px;
+}
+
+.aclass3 {
+    padding-right: 25px;
+    right: auto;
+    float: right;
+    margin-top: 30px;
+    width: 300px;
+}
+.aclass3 a{
+ text-decoration: none;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-bar{
+    margin-top: 2px ;
+    width: 100%;
+    max-width: 700  px;
+    background-color: #156ee2;
+    display: flex;
+    border-radius: 1px;
+    align-items: center;
+}
+.search-bar input{
+    background-color: transparent;
+    flex: 1;
+    border: 1px solid grey;
+    outline:none ;
+    padding: 12px 10px;
+    font-size: 15px;
+    color: #cac7ff;
+}
+::placeholder{
+    color: rgb(0, 0, 0);
+}
+.search-bar button img{
+    width: 32px;
+    border-radius: 50%;
+    width: 60px;
+    height:32px;
+    background: #58629b;
+    cursor: pointer;
+
+}
+
+nav{position: relative;
+    background-color: rgb(54, 49, 49);
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 800px;
+    height: 15px;
+    font-size: 16px;
+   }
+  
+button[type="submit"] {
+    padding: 10px;
+    background-color: #008CBA;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100px;
+  }
+  
+button[type="submit"]:hover {
+    background-color: #023753;
+  }
+
+
+.parallax nav{
+    background-color: transparent;
+  }
+.parallax ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+
+.parallax li {
+  margin: 0 10px;
+  display: inline;
+}
+
+.parallax li a{
+  padding: 0 53px;
+}
+
+.parallax a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.parallax a:hover{
+  color: rgb(70, 66, 66);
+}
+
+.class1{
+  background-color: whitesmoke;
+}
+
+.content{
+  background-color: #3a3a3a;
+  padding-right: 15px;
+  padding-top: 5px;
+}
+
+.featured_events{
+  background-color:  #3a3a3a;
+  margin-left: 20px;
+  margin-top: 15px;
+  border: dotted 1.60px rgb(177, 177, 177);
+  border-radius: 2%;
+  overflow: hidden;
+  padding-top: 0.01px;
+}
+
+.featured_events center{
+  animation: come-out-from-bottom-and-got-to-top 8s linear infinite;        
+}
+
+.featured_events center:hover{
+  animation-play-state: paused;
+}
+
+@keyframes come-out-from-bottom-and-got-to-top {
+  0% {
+    transform: translateY(0);
+    optacity: 0;
+  }
+  25% {
+    transform: translateY(-100%);
+    optacity: 0;
+  }
+  50% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  75% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    optacity: 0;
+  }
+}
+
+.featured_events a {
+  font-size: small;
+  list-style: circle;
+}
+
+.featured_events h2{
+  /* background-color: #c3c9cc; */
+  color:#c0bfbf;
+  z-index: 1;
+  position: absolute;
+  font-size: 32px;
+  margin-top: 2px;
+  
+}
+
+.featured_events h2 a{
+  height: 20px;
+  width: 20px;
+}
+
+.inside_fe1{
+  background-color: #3a3a3a;
+  z-index: 1;
+  position: absolute;
+  border-radius: 3%;
+}
+
+.inside_fe2{
+  background-color: #e1e1e1;
+  margin: 15px;
+  padding: 15px;
+}
+ 
